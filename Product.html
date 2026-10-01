@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial 1.0">
+    <title>Product Card</title>
+  </head>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Arial';
+    }
+
+    body{
+      height:100vh;
+      width:100%;
+      display:flex;;
+      align-items:center;
+      justify-content:center;
+      background:#e6e6e6;
+    }
+
+    .container{
+      display:flex;
+      width:1000px;
+      height:540px;
+      border-radius:12px;
+      background:#fff;
+      box-shadow:0 5px 10px rgba(0, 0, 0, 0.15);
+      justify-content:space-between;
+      position:relative;
+    }
+
+    .container::before{
+      position:absolute;
+      content:'';
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      clip-path:circle(65% at right 35%);
+      background:linear-gradient(135deg, #fd9bb0, #f6416c);
+    }
+
+    .details .price-box .price{
+        color:#ffd700;
+        font-size:30px;
+      }
+
+    .price-box .discount::before{
+            content:'';
+            position:absolute;
+            height:1px;
+            width:100px;
+            background:#737373;
+            top:50%;
+            left:-8px;
+      }
+    
+    .container .box-one {
+        padding:35px 5px 0 35px;
+        padding:35px 5px 0 35px;
+      
+    }
+    .box-one .details .topic{
+      font-size:30px;
+      font-weight:600;
+    }
+
+    .box.one .details p{
+      color:#737373;
+      font-size:13px;
+      font-weight:500;
+    }
+
+    .box-one .details .rating{
+      color:#ffd700;
+    }
+
+    .box-one .details .price-box{
+        margin-top:16px;
+      z-index:2;
+      
+    }
+
+    .box-one .button1 button{
+      outline:none;
+      background:#00e6e6;
+      color:#fff;
+      padding:8px 16px;
+      border-radius:6px;
+      font-weight:500;
+      font-size:16px;
+      cursor:pointer;
+      border:none;
+      transition:all 0.3s ease;
+    }
+
+      .box-one .button1 button:hover{
+        transform:scale(0.98);
+        
+      }
+
+    .box-one .box-two .image-box{
+      position:relative;
+      text-align:right;
+      right:0;
+      bottom:32px;
+      
+    }
+
+    .details .price-box .discount{
+          font-size:20px;
+          color:#737373;
+          margin:10px 0 0 12px;
+          position:relative;
+    }
+      
+
+    .container  .box-two .image{
+       height:340px;
+        width:430px;
+    }
+
+    .box-two .image img{
+      height:100%;
+      width:100%;
+      object-fit:cover;
+      z-index:2;
+    }
+
+    .box-two .info {
+      margin:0 35px 0 0;
+      
+    }
+
+      .box-two .info .brand{
+        font-size:45px;
+        font-weight:600;
+        color:#00bfff;
+      }
+
+    .box-two .info .name{
+      font-size:32px;
+      font-weight:600;
+    }
+
+    .box-two .info .shipping{
+      font-size:30px;
+      font-weight:600;
+      color:#ccc;
+    }
+
+    .box-two .info .button2 button{
+      outline:none;
+      padding:8px 16px;
+      /*color:#fff;*/
+      background:transparent;
+      border-radius:6px;
+      border:1px solid #000;
+      font-size:35px;
+      font-weight:400;
+      cursor:pointer;
+      
+    }
+</style>
+  <body>
+
+    <div class="container">
+      <div class="box-one">
+        <div class="details">
+          <div class="topic">Description</div><br/>
+          <p><b>Screen</b> - 14.0-inch Full HD (1920 x 1080) IPS display</p><br/>
+         <p><b>CPU</b> -  Core i3-1215U, Core i5-1235U, Core i5-1245U, Core i7-1255U,
+           and Core i7-1265U</p><br/>
+         <p> <b>Connectivity</b> - Wi-Fi 6E</p><br/>
+         <p> <b>Storage</b> -  64GB of RAM and up to 1TB SSD storage,</p><br/>
+          <p><b>GPU</b> - Intel UHD Graphics (64EU), Intel
+            Iris Xe Graphics G7 (80EU or 96EU)</p><br/>
+        <p><b>Operating System</b> -  Windows 11 Pro</p><br/>
+          <div class="rating">★★★★★</div>
+          <div class="price-box">
+            <div class="discount">$1800.00</div>
+            <div class="price">$1500.00</div>
+        </div>
+      </div>
+        <div class="button1">
+          <button>Add To Cart</button>
+        </div>
+    </div>
+      <div class="box-two">
+        <div class="image-box">
+          <div class="image">
+            <img src="Product.png" alt="laptop">
+          </div>
+          <div class="info">
+            <div class="brand">HP</div>
+            <div class="name">HP Elitebook 640 G9</div>
+            <div class="shipping">FREE SHIPPING</div>
+            <div class="button2">
+              <button>Login For More</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>
+    
